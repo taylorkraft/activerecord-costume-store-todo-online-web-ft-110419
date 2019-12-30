@@ -1,14 +1,14 @@
 class CreateHauntedHouses < ActiveRecord::Migration[4.2]
   def change
-    create_table :haunted_houses do |x|
-      x.string :name
-      x.string :location
-      x.string :theme
-      x.float :price
-      x.boolean :family_friendly
-      x.datetime :opening_date
-      x.datetime :closing_date
-      x.text :description
+    create_table :haunted_houses do |t|
+      t.string :name
+      t.string :location
+      t.string :theme
+      t.float :price
+      t.boolean :family_friendly
+      t.datetime :opening_date
+      t.datetime :closing_date
+      t.text :description
     end
   end
 end
